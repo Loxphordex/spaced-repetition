@@ -1,0 +1,35 @@
+nav {
+  text-align: right;
+  float: right;
+  margin-top: 5px;
+}
+
+header {
+  display: inline-block;
+  width: 100%;
+}
+
+.main-header h1 {
+  display: inline-block;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 44px;
+  position: relative;
+  bottom: 25px;
+}
+
+.main-header a {
+  text-decoration: none;
+  padding: 5px;
+  color: rgb(0, 54, 68)
+}
+
+.logout-link {
+  float: right;
+  min-width: 100px;
+}
+
+.logged-user {
+  display: inline-block;
+  float: none;
+  padding: 5px;
+}
