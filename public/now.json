@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "spaced-repetition",
-  "alias": "ds-spaced-repetition",
+  "name": "silas-spaced-repetition",
+  "alias": "silas-spaced-repetition",
   "routes": [
     {
       "src": "^/static/(.*)",

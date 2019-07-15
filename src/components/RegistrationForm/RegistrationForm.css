@@ -1,12 +1,16 @@
 section {
-  max-width: 400px;
+  display: inline-block;
+  width: 400px;
   margin: auto;
-  border: 1px solid gray;
-  border-radius: 5px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
   padding: 10px;
-  background-color: rgb(51, 51, 51);
-  color: rgb(255, 237, 221);
+  color: rgb(26, 26, 26);
   min-height: 300px;
+}
+
+.reg-section {
+  grid-column: 1/2;
 }
 
 .reg-element {
@@ -15,6 +19,9 @@ section {
 
 .reg-element label {
   padding-right: 8px;
+  min-width: 160px;
+  display: inline-block;
+  text-align: left;
 }
 
 .sign-up-button {

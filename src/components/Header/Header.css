@@ -1,12 +1,22 @@
 nav {
-  text-align: right;
-  float: right;
-  margin-top: 5px;
+  margin-top: 15%;
 }
 
 header {
   display: inline-block;
   width: 100%;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: 'Fjalla One', sans-serif;
+  color: rgb(26, 26, 26);
+  font-style: italic;
+  font-weight: 200;
+  margin-top: 0;
+
+  position: relative;
+  top: -17px;
 }
 
 .main-header h1 {
@@ -15,12 +25,16 @@ header {
   font-size: 44px;
   position: relative;
   bottom: 25px;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+
+  border-bottom: 1px solid gray;
 }
 
 .main-header a {
   text-decoration: none;
   padding: 5px;
-  color: rgb(0, 54, 68)
+  color: rgb(26, 26, 26);
 }
 
 .logout-link {

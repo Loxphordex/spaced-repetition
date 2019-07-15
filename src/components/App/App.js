@@ -8,6 +8,7 @@ import LoginRoute from '../../routes/LoginRoute/LoginRoute'
 import DashboardRoute from '../../routes/DashboardRoute/DashboardRoute'
 import LearningRoute from '../../routes/LearningRoute/LearningRoute'
 import NotFoundRoute from '../../routes/NotFoundRoute/NotFoundRoute'
+import classical from '../../images/classical.jpeg'
 import './App.css'
 
 export default class App extends Component {
@@ -51,6 +52,7 @@ export default class App extends Component {
             />
           </Switch>
         </main>
+        <img className='landing-img' src={classical} alt='spaced-rep-landing'/>
       </div>
     );
   }
