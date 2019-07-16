@@ -1,5 +1,9 @@
+.start-practicing {
+  color: black;
+}
+
 .start-practicing:visited {
-  color: white;
+  color: black;
 }
 
 .practice-list {
@@ -9,9 +13,9 @@
 }
 
 .dashboard-word {
-  margin-top: 6%;
-  margin-bottom: 6%;
-  background-color: rgb(83, 80, 71);
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: rgb(214, 214, 214);
   border-radius: 7px;
   padding: 5px;
 }

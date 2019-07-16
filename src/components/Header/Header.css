@@ -38,13 +38,20 @@ header {
   color: white;
 }
 
+.logged-nav {
+  display: inline-block;
+}
+
 .logout-link {
   float: right;
   min-width: 100px;
+  width: 100%;
 }
 
 .logged-user {
   display: inline-block;
   float: none;
   padding: 5px;
+  color: white;
+  font-style: italic;
 }
