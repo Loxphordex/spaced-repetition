@@ -39,6 +39,7 @@ class LoginForm extends Component {
 
   componentDidMount() {
     this.firstInput.current.focus()
+    this.props.setOnLanding()
   }
 
   render() {

@@ -21,7 +21,6 @@ class RegistrationForm extends Component {
     ev.preventDefault()
     const { name, username, password } = ev.target
     if (password.length < 8) {
-      console.log('password is too short')
       this.setState({ error: 'Password must be at least 8 characters.' })
     }
 
@@ -47,6 +46,7 @@ class RegistrationForm extends Component {
 
   componentDidMount() {
     this.firstInput.current.focus()
+    this.props.setOnLanding()
   }
 
   render() {

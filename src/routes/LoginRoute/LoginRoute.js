@@ -21,6 +21,7 @@ class LoginRoute extends Component {
         <h2>Login</h2>
         <LoginForm
           onLoginSuccess={this.handleLoginSuccess}
+          setOnLanding={this.props.setOnLanding}
         />
       </section>
     );

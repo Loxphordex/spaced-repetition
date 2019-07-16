@@ -22,6 +22,7 @@ class RegistrationRoute extends Component {
         <h2>Sign up</h2>
         <RegistrationForm
           onRegistrationSuccess={this.handleRegistrationSuccess}
+          setOnLanding={this.props.setOnLanding}
         />
       </section>
     );

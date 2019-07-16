@@ -12,15 +12,26 @@ import classical from '../../images/classical.jpeg'
 import './App.css'
 
 export default class App extends Component {
-  state = { hasError: false }
+  state = { 
+    hasError: false,
+    onLanding: '',
+  }
 
   static getDerivedStateFromError(error) {
     console.error(error)
     return { hasError: true }
   }
 
+  setOnLanding = () => {
+    this.setState({ onLanding: 'landing' })
+  }
+
+  setOffLanding = () => {
+    this.setState({ onLanding: '' })
+  }
+
   render() {
-    const { hasError } = this.state
+    const { hasError, onLanding } = this.state
     return (
       <div className='App'>
         <Header />
@@ -32,19 +43,24 @@ export default class App extends Component {
             <PrivateRoute
               exact
               path={'/'}
+              setOffLanding={this.setOffLanding}
+              error={this.state.hasError}
               component={DashboardRoute}
             />
             <PrivateRoute
               path={'/learn'}
+              setOffLanding={this.setOffLanding}
               component={LearningRoute}
             />
             <PublicOnlyRoute
               path={'/register'}
+              setOnLanding={this.setOnLanding}
               component={RegistrationRoute}
               className='registration-section'
             />
             <PublicOnlyRoute
               path={'/login'}
+              setOnLanding={this.setOnLanding}
               component={LoginRoute}
             />
             <Route
@@ -52,7 +68,7 @@ export default class App extends Component {
             />
           </Switch>
         </main>
-        <img className='landing-img' src={classical} alt='spaced-rep-landing'/>
+        {!!onLanding && <img className='landing-img' src={classical} alt='spaced-rep-landing'/>}
       </div>
     );
   }

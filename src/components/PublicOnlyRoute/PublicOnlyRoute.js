@@ -4,6 +4,7 @@ import UserContext from '../../contexts/UserContext'
 
 export default function PublicOnlyRoute({ component, ...props }) {
   const Component = component
+  const setOnLanding = props.setOnLanding
   return (
     <Route
       {...props}
@@ -12,7 +13,7 @@ export default function PublicOnlyRoute({ component, ...props }) {
           {userContext =>
             !!userContext.user.id
               ? <Redirect to={'/'} />
-              : <Component {...componentProps} />
+              : <Component {...componentProps} setOnLanding={setOnLanding} />
           }
         </UserContext.Consumer>
       )}

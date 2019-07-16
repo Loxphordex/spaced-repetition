@@ -24,9 +24,12 @@ class DashboardRoute extends Component {
             this.props.history.push('/login');
         }
       });
+
+    this.props.setOffLanding()
   }
 
   render() {
+    console.log(this.props)
     return (
       <section>
         <h2>{this.state.language.name}</h2>
