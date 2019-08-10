@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import LanguageService from '../../services/language-service'
-import './LearningRoute.css'
-
 
 class LearningRoute extends Component {
   state = {

@@ -2,9 +2,6 @@
 
 * {
   box-sizing: border-box;
-  max-width: 802px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 body {
@@ -18,12 +15,6 @@ body {
 
 :root {
   --font-size: calc(10px + 1vmin);
-}
-
-main {
-  margin: auto;
-  text-align: center;
-  background-color: white;
 }
 
 

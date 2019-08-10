@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import LanguageService from '../../services/language-service'
 import UserContext from '../../contexts/UserContext';
-import './DashboardRoute.css';
 
 class DashboardRoute extends Component {
   state = {

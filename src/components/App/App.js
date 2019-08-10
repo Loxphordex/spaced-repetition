@@ -8,8 +8,6 @@ import LoginRoute from '../../routes/LoginRoute/LoginRoute'
 import DashboardRoute from '../../routes/DashboardRoute/DashboardRoute'
 import LearningRoute from '../../routes/LearningRoute/LearningRoute'
 import NotFoundRoute from '../../routes/NotFoundRoute/NotFoundRoute'
-import classical from '../../images/classical.jpeg'
-import './App.css'
 
 export default class App extends Component {
   state = { 
@@ -31,7 +29,7 @@ export default class App extends Component {
   }
 
   render() {
-    const { hasError, onLanding } = this.state
+    const { hasError } = this.state
     return (
       <div className='App'>
         <Header />
@@ -68,7 +66,6 @@ export default class App extends Component {
             />
           </Switch>
         </main>
-        {!!onLanding && <img className='landing-img' src={classical} alt='spaced-rep-landing'/>}
       </div>
     );
   }
