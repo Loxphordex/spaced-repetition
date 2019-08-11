@@ -1,0 +1,25 @@
+.main-header {
+  text-align: center;
+}
+
+.main-header nav {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+.main-header nav a {
+  padding-right: 1%;
+  text-decoration: none;
+}
+
+.main-header h1 {
+  font-family: 'Fjalla One';
+  margin-bottom: 0;
+}
+
+.main-header h2 {
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 16px;
+}

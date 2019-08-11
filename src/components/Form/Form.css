@@ -1,0 +1,75 @@
+.form-area *,
+.form-area {
+  background: none;
+}
+
+.form-area {
+  background-color: white;
+  width: 92%;
+  margin: auto;
+  margin-top: 6%;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(14,51,76,.25);
+}
+
+.form-area p {
+  color: rgb(24, 23, 23);
+  text-align: left;
+  padding: 5%;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.form-area h2 {
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  color: rgb(24, 23, 23);
+  margin-top: 0;
+}
+.Label {
+  text-align: left;
+  display: inline-block;
+  width: 90%;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(24, 23, 23);
+  margin: 1%;
+}
+.Input {
+  width: 90%;
+  height: 3vh;
+  font-size: 16px;
+  padding: 2%;
+  color: rgb(24, 23, 23);
+
+  margin-bottom: 3%;
+
+  border: 1px solid rgb(24, 23, 23);
+  border-radius: 3px;
+  outline: none;
+}
+.Input:focus {
+  border: 1px solid rgb(156, 5, 202);;
+}
+.Button {
+  width: 94%;
+  height: 6vh;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 4%;
+  padding: 0;
+  margin-bottom: 3%;
+  border-radius: 3px;
+
+  background-color: rgb(156, 5, 202);
+  border: none;
+  box-shadow: 0 4px 8px rgba(14,51,76,.252689);
+}
+
+.form-area a {
+  color: rgb(24, 23, 23);
+  margin: 4%;
+  display: inline-block;
+  font-size: 12px;
+}

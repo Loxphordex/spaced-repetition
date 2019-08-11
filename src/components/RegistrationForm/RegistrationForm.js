@@ -60,7 +60,7 @@ class RegistrationForm extends Component {
         </div>
         <div className='reg-element'>
           <Label htmlFor='registration-name-input'>
-            Enter your name<Required />
+            Name<Required />
           </Label>
           <Input
             ref={this.firstInput}
@@ -71,7 +71,7 @@ class RegistrationForm extends Component {
         </div>
         <div className='reg-element'>
           <Label htmlFor='registration-username-input'>
-            Choose a username<Required />
+            Username<Required />
           </Label>
           <Input
             id='registration-username-input'
@@ -82,7 +82,7 @@ class RegistrationForm extends Component {
         </div>
         <div className='reg-element'>
           <Label htmlFor='registration-password-input'>
-            Choose a password<Required />
+            Password<Required />
           </Label>
           <Input
             id='registration-password-input'
@@ -94,7 +94,7 @@ class RegistrationForm extends Component {
         </div>
         <footer className='reg-element'>
           <Button type='submit' className='sign-up-button'>
-            Sign up
+            Create Account
           </Button>
           {' '}
           <Link to='/login'>Already have an account?</Link>

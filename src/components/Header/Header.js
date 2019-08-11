@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import TokenService from '../../services/token-service'
 import UserContext from '../../contexts/UserContext'
+import './Header.css'
 
 class Header extends Component {
   static contextType = UserContext
@@ -48,7 +49,7 @@ class Header extends Component {
             Spaced Repetition
           </Link>
         </h1>
-        <h2 className='subtitle'>Italian</h2>
+        <h2 className='subtitle'>I T A L I A N</h2>
       </header>
     );
   }

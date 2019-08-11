@@ -15,7 +15,7 @@ class RegistrationRoute extends Component {
 
   render() {
     return (
-      <section className='reg-section'>
+      <section className='reg-section form-area'>
         <p>
           Practice learning a language with the spaced repetition revision technique.
         </p>
