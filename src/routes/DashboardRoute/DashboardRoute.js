@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import LanguageService from '../../services/language-service'
 import UserContext from '../../contexts/UserContext';
+import './DashboardRoute.css'
 
 class DashboardRoute extends Component {
   state = {
@@ -30,11 +31,10 @@ class DashboardRoute extends Component {
   render() {
     console.log(this.props)
     return (
-      <section>
-        <h2>{this.state.language.name}</h2>
+      <section className='dashboard-area'>
         <h2>{'Total correct answers: ' + this.state.language.total_score}</h2>
 
-        <a className='start-practicing' href='/learn'>Start practicing</a>
+        <a className='start-practicing' href='/learn'>Start Practicing</a>
 
         <h3>Words to practice</h3>
 
@@ -42,9 +42,13 @@ class DashboardRoute extends Component {
           {this.state.words.length && this.state.words.map(word => {
             return(
               <li key={word.id} className="dashboard-word">
-                <h4>{word.original}</h4>
-                <div>{'correct answer count: ' + word.correct_count}</div>
-                <div>{'incorrect answer count: ' + word.incorrect_count}</div>
+                <div className='dw-container'>
+                  <h4>{word.original}</h4>
+                </div>
+                <div className='score-container'>
+                  <div className='correct'>{word.correct_count}</div>
+                  <div className='incorrect'>{word.incorrect_count}</div>
+                </div>
               </li>
             )
           })}

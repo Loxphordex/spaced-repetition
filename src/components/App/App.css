@@ -1,5 +1,6 @@
 .App {
-  height: 100vh;
+  height: max-content;
+  min-height: 100vh;
   padding-top: 3%;
 
   background: rgb(32,32,32);

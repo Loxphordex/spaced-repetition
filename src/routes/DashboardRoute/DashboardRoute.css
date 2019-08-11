@@ -1,0 +1,70 @@
+.dashboard-area {
+  width: 92%;
+  margin: auto;
+}
+
+.start-practicing {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  height: 6vh;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 4%;
+  padding: 3%;
+  margin-bottom: 3%;
+  border-radius: 3px;
+  text-decoration: none;
+  
+  background-color: rgb(156, 5, 202);
+  border: none;
+  box-shadow: 0 4px 8px rgba(14,51,76,.252689);
+}
+
+.practice-list {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-word {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(14,51,76,.252689);
+  border-radius: 3px;
+  margin: 5% auto;
+  padding: 3%;
+}
+
+.dashboard-word * {
+  color: rgb(24, 23, 23);
+  display: inline-block;
+}
+
+.dw-container {
+  text-align: left;
+  width: 50%;
+}
+
+.dw-container h4 {
+  font-size: 20px;
+  max-width: 50%;
+  margin: 0;
+}
+
+.score-container {
+  text-align: right;
+  width: 50%;
+}
+
+.correct,
+.incorrect {
+  font-size: 32px;
+  margin: 2%;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
