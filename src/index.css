@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 * {
-  color: white;
+  color: rgb(244, 241, 248);
 }
 
 html {
@@ -14,7 +14,7 @@ body {
   font-family: 'Archivo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
+  background-color: rgb(244, 241, 248);
 }
 
 :root {

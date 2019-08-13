@@ -3,10 +3,23 @@
   margin: auto;
 }
 
+.dashboard-info {
+  box-shadow: 0 4px 8px rgba(14,51,76,.25);
+  padding: 3%;
+  margin: 10% auto;
+}
+
+.dashboard-info,
+.dashboard-info * {
+  background-color: rgb(244, 241, 248);
+  color: rgb(24, 23, 23);
+  border-radius: 3px;
+}
+
 .start-practicing {
   box-sizing: border-box;
   display: inline-block;
-  width: 100%;
+  width: 93%;
   height: 6vh;
   font-size: 17px;
   font-weight: bold;
@@ -16,7 +29,8 @@
   border-radius: 3px;
   text-decoration: none;
   
-  background-color: rgb(156, 5, 202);
+  color: rgb(244, 241, 248);
+  background-color: #627b2f;
   border: none;
   box-shadow: 0 4px 8px rgba(14,51,76,.252689);
 }
@@ -27,15 +41,17 @@
 }
 
 .dashboard-word {
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(14,51,76,.252689);
+  border: 1px solid rgb(244, 241, 248);
+  background-color: rgb(30, 32, 37);
+  box-shadow: 0 4px 8px rgba(37, 45, 49, 0.253);
   border-radius: 3px;
   margin: 5% auto;
   padding: 3%;
+  display: flex;
+  align-items: center;
 }
 
 .dashboard-word * {
-  color: rgb(24, 23, 23);
   display: inline-block;
 }
 
@@ -46,6 +62,7 @@
 
 .dw-container h4 {
   font-size: 20px;
+  font-weight: 500;
   max-width: 50%;
   margin: 0;
 }
@@ -57,14 +74,14 @@
 
 .correct,
 .incorrect {
-  font-size: 32px;
+  font-size: 16px;
   margin: 2%;
 }
 
 .correct {
-  color: green;
+  color: #abdb4c;
 }
 
 .incorrect {
-  color: red;
+  color: rgb(244, 241, 248);
 }

@@ -4,7 +4,7 @@
 }
 
 .form-area {
-  background-color: white;
+  background-color: rgb(244, 241, 248);
   width: 92%;
   margin: auto;
   margin-top: 6%;
@@ -50,7 +50,7 @@
   outline: none;
 }
 .Input:focus {
-  border: 1px solid rgb(156, 5, 202);;
+  border: 1px solid #627b2f;
 }
 .Button {
   width: 94%;
@@ -62,7 +62,8 @@
   margin-bottom: 3%;
   border-radius: 3px;
 
-  background-color: rgb(156, 5, 202);
+  background-color: #627b2f;
+  color: rgb(244, 241, 248);
   border: none;
   box-shadow: 0 4px 8px rgba(14,51,76,.252689);
 }

@@ -32,12 +32,12 @@ class DashboardRoute extends Component {
     console.log(this.props)
     return (
       <section className='dashboard-area'>
-        <h2>{'Total correct answers: ' + this.state.language.total_score}</h2>
+        <div className='dashboard-info'>
+          <h2>{'Total correct answers: ' + this.state.language.total_score}</h2>
+          <a className='start-practicing' href='/learn'>Start Practicing</a>
+        </div>
 
-        <a className='start-practicing' href='/learn'>Start Practicing</a>
-
-        <h3>Words to practice</h3>
-
+        <h3>Words to Practice</h3>
         <ul className='practice-list'>
           {this.state.words.length && this.state.words.map(word => {
             return(
@@ -46,8 +46,8 @@ class DashboardRoute extends Component {
                   <h4>{word.original}</h4>
                 </div>
                 <div className='score-container'>
-                  <div className='correct'>{word.correct_count}</div>
-                  <div className='incorrect'>{word.incorrect_count}</div>
+                  <div className='correct'>{'Correct: ' + word.correct_count}</div>
+                  <div className='incorrect'>{'Incorrect: ' + word.incorrect_count}</div>
                 </div>
               </li>
             )

@@ -1,0 +1,15 @@
+.learn-section,
+.learn-section * {
+  color: rgb(24, 23, 23);
+  border-radius: 3px;
+}
+
+.learn-section {
+  background-color: rgb(244, 241, 248);
+  width: 94%;
+  margin: auto;
+}
+
+.learn-section button {
+  color: rgb(244, 241, 248);
+}

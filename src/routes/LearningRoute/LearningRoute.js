@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import LanguageService from '../../services/language-service'
+import './LearningRoute.css'
 
 class LearningRoute extends Component {
   state = {
@@ -100,7 +101,7 @@ class LearningRoute extends Component {
             name='guess'
             value={this.state.guess} 
             id='learn-guess-input' 
-            className='guess' 
+            className='guess Input' 
             onChange={(event) => this.handleChangeAnswer(event)}
             required></input>
       ];
@@ -122,7 +123,7 @@ class LearningRoute extends Component {
 
         <form className='main_form' onSubmit={(event) => this.handleSubmitAnswer(event)}>
           {inputField}
-          <button type='submit'>
+          <button type='submit' className='Button'>
             {this.state.nextWord === this.state.lastWord && 'Submit your answer'}
             {this.state.nextWord !== this.state.lastWord && 'Try another word!'}
           </button>

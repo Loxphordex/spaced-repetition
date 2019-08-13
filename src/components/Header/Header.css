@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+.main-header .logged-nav {
+  display: inline-block;
+  width: min-content;
+  margin: auto 2%;
+}
+
 .main-header nav {
   width: 90%;
   text-align: center;
