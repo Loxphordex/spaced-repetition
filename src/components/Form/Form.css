@@ -41,6 +41,7 @@
   height: 3vh;
   font-size: 16px;
   padding: 2%;
+  background-color: rgb(244, 241, 248);
   color: rgb(24, 23, 23);
 
   margin-bottom: 3%;
@@ -73,4 +74,37 @@
   margin: 4%;
   display: inline-block;
   font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .form-area {
+    width: 38%;
+    min-width: 500px;
+    max-width: 700px;
+    margin-top: 2%;
+    padding: 1% 0;
+  }
+  .form-area h2 {
+    width: 93%;
+  }
+  .form-area p {
+    padding: 3% 3%;
+  }
+  .Label {
+    margin-left: 0;
+    width: 93%;
+  }
+  .Input {
+    height: 2vh;
+    margin-bottom: 2%;
+  }
+  .Button {
+    height: 4.5vh;
+    min-height: 36px;
+    cursor: pointer;
+  }
+  .form-area a {
+    font-size: 16px;
+    margin: 2% auto;
+  }
 }

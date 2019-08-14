@@ -8,8 +8,45 @@
   background-color: rgb(244, 241, 248);
   width: 94%;
   margin: auto;
+  margin-top: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .learn-section button {
   color: rgb(244, 241, 248);
+  margin-top: 0;
+}
+
+.learn-section h2 {
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+
+.main_form label {
+  display: inline-block;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.current-word {
+  display: inline-block;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.DisplayScore {
+  text-align: left;
+}
+
+.DisplayFeedback {
+  font-size: 1.2em;
+}
+
+.learn-section p {
+  text-align: left;
+  margin: 2%;
+  font-size: 0.9em;
 }
